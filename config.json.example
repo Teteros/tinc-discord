@@ -1,0 +1,25 @@
+{
+    "description": "TincVPN invite bot",
+    "request": {
+        "aliases": ["req"],
+        "blacklistRoleName": "",
+        "inviteError": "Invite creation failed, please contact bot owner.",
+        "inviteErrorDM": "I cannot send you an invite 🙁\nYou have disabled direct messages on this server.\n\nCould you enable them and request an invite again?\nhttps://cdn.discordapp.com/attachments/462754774077538327/576622033945755679/ss.png",
+        "inviteMessage": "Your unique invite link:\n```\n{INVITE_LINK}\n```Accept with `tinc join` command.",
+        "inviteReaction": "📨"
+    },
+    "prefix": "!",
+    "redirectToWhitelistedChannel": "false",
+    "refreshPlayingStatusSec": 60,
+    "tinc": {
+        "bin": "tinc",
+        "params": [
+            "--config=tinc",
+            "--pidfile=tinc/tinc.pid"
+        ],
+        "noDuplicateInvites": false
+    },
+    "token": "",
+    "VPNRoleName": "",
+    "whitelistChannelName": "#tinc"
+}

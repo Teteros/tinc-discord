@@ -1,0 +1,35 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "jsx": false
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/explicit-function-return-type": ["error", {"allowExpressions": true}],
+    "no-console": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts"
+        ]
+      }
+    }
+  }
+}
